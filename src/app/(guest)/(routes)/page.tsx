@@ -1,5 +1,5 @@
 export default function Page() {
-    return <main className="h-screen overflow-hidden w-screen bg-black text-white">
+    return <main className="h-screen w-screen bg-black text-white">
         <img 
             src="/images/neon_wallpaper.jpg"
             className="h-screen object-cover w-screen fixed right-0 top-0 z-10 opacity-40"
@@ -9,19 +9,19 @@ export default function Page() {
             <div className="relative h-screen flex justify-center items-end">
                 <img 
                     src="/images/characters/neon_girl_character.png"
-                    className="h-5/6 mt-20 fixed left-0 -mb-20 scale-x-[-1]"
+                    className="h-5/6 mt-20 fixed left-0 -mb-20 scale-x-[-1] hidden md:block"
                     draggable="false"
                 />
                 
                 <img 
                     src="/images/characters/main_character.png"
-                    className="h-full z-40"
+                    className="h-3/4 md:h-full z-40"
                     draggable="false"
                 />
 
                 <img 
                     src="/images/characters/blue_right_character.png"
-                    className="h-5/6 mt-20 -right-10 fixed -mb-20"
+                    className="h-5/6 mt-20 -right-10 fixed -mb-20 hidden md:block"
                     draggable="false"
                 />
             </div>
