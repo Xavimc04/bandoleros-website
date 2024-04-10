@@ -1,10 +1,33 @@
+import { APP_DISCORD } from "@/lib/constants";
+
 export default function Page() {
     return <main className="h-screen w-screen bg-black text-white">
+        {/* @ Background image */}
         <img 
             src="/images/neon_wallpaper.jpg"
             className="h-screen object-cover w-screen fixed right-0 top-0 z-10 opacity-40"
         />
 
+        {/* @ Header links */}
+        <nav className="absolute w-screen z-20">
+            <ul className="flex justify-end items-start p-4"> 
+                <li>
+                    <ul className="flex gap-5">
+                        <li>
+                            <a
+                                href={ APP_DISCORD }
+                            >
+                                <img 
+                                    src="/icons/discord.svg"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        {/* @ Middle characters */}
         <section className="fixed bottom-0 left-1/2 -translate-x-1/2 h-screen z-20 w-[950px]">
             <div className="relative h-screen flex justify-center items-end">
                 <img 
@@ -27,6 +50,7 @@ export default function Page() {
             </div>
         </section>
 
+        {/* @ Footer */}
         <section className="z-50 bg-black/80 border-t-8 border-red-500 fixed bottom-0 w-screen h-20 flex flex-col items-center">
             <article 
                 className="border-8 border-indigo-400 flex bg-black -mt-10 px-5 py-3 rounded-lg items-center gap-4"
