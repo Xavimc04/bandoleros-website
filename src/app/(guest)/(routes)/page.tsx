@@ -56,7 +56,7 @@ export default function Page() {
         {/* @ Page content */}
         <section className="absolute -mt-20 z-30 bg-black border-t-8 border-red-500 w-screen flex flex-col items-center">
             <article 
-                className="border-8 border-indigo-400 flex bg-black -mt-10 px-5 py-3 rounded-lg items-center gap-4 mb-32"
+                className="border-8 border-indigo-400 flex bg-black -mt-10 px-5 py-3 rounded-lg items-center gap-4"
                 style={{
                     boxShadow: "0 0 10px 5px black"
                 }}
