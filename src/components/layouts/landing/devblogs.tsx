@@ -10,7 +10,10 @@ export default async function Devblogs() {
         {/* @ Display single blog content */}
         
         {
-            files.map((file: string) => <Markdown fileName={ file } />)
+            files.map((file: string, index: number) => <Markdown
+                fileName={ file }
+                key={ file + index }
+            />)
         }
     </section>
 }
