@@ -13,7 +13,9 @@ export default async function RenderFileContent({
 
     if(!content) return;
 
-    return <Markdown
-        remarkPlugins={[remarkGfm]}
-    >{ content }</Markdown>
+    return <article className="flex flex-col">
+        <Markdown
+            remarkPlugins={[remarkGfm]}
+        >{ content }</Markdown>
+    </article>
 }
