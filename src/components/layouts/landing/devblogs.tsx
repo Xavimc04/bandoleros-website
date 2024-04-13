@@ -1,5 +1,5 @@
 import { getMarkdownFiles } from "@/lib/data"
-import Markdown from "./markdown";
+import RenderFileContent from "./markdown";
 
 export default async function Devblogs() {
     const files = await getMarkdownFiles();
@@ -10,7 +10,7 @@ export default async function Devblogs() {
         {/* @ Display single blog content */}
         
         {
-            files.map((file: string, index: number) => <Markdown
+            files.map((file: string, index: number) => <RenderFileContent
                 fileName={ file }
                 key={ file + index }
             />)

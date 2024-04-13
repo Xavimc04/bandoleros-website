@@ -15,3 +15,13 @@ export async function getMarkdownFiles() {
         return false
     }
 }
+
+export async function readMarkdownFile(fileName: string) {
+    try {
+        const file = fs.readFileSync(`./public/${ PUBLIC_BLOG_PATH }/${ fileName }`, 'utf-8');
+
+        return file;
+    } catch (error) {
+        return false
+    }
+}

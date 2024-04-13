@@ -1,9 +1,19 @@
-export default async function Markdown({
+"use server"
+
+import { readMarkdownFile } from "@/lib/data"
+import Markdown from "react-markdown";
+import remarkGfm from 'remark-gfm'
+
+export default async function RenderFileContent({
     fileName
 } : {
     fileName: string
 }) {
-    return <div>
-        <h1>{ fileName }</h1>
-    </div>
+    const content = await readMarkdownFile(fileName);
+
+    if(!content) return;
+
+    return <Markdown
+        remarkPlugins={[remarkGfm]}
+    >{ content }</Markdown>
 }
