@@ -1,14 +1,54 @@
-## Default markdown message
+![Imgur](https://i.imgur.com/jz1ZV28.png)
 
-This is a testing message!
+## Server Manager
 
-## Random list
+FiveM server web store with following features. 
 
-1. First one
-2. Second one
+- Landing page
+- Discord Auth
+- Posts
+- Posts commments
+- Paypal integration
+- Store product management
 
-- First one
-- Second one
+## Installation
+
+1. Open your terminal and clone the project
+
+```
+git clone https://github.com/Xavimc04/cfx-server-manager.git
+```
+
+2. Switch to project
+
+```
+cd project-folder
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Setup .env and .env.local
+
+5. Start the server
+
+```
+npm run dev
+```
+
+## Third party integrations
+
+- Paypal
+- Next-Auth
+- Cloudinary
+- Prisma
+
+## Working on
+
+- Product items configure ingame reward
 
 ## Author
 

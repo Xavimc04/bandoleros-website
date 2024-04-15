@@ -6,7 +6,7 @@ export default async function Devblogs() {
 
     if(!files) return; 
 
-    return <section className="w-1/2 flex flex-col gap-16 min-h-32">
+    return <section className="mt-20 flex flex-col gap-16 min-h-32">
         {/* @ Display single blog content */}
         
         {

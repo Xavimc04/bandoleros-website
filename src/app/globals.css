@@ -19,6 +19,20 @@
     font-family: poppins;
 }
 
+.prose * {
+    margin-top: -5px;
+}
+
+.prose *:first-child {
+    margin-top: 0px;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    margin-top: 20px;
+    font-family: poppins;
+    font-weight: 400;
+}
+
 .stroke {
     text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
                1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
