@@ -11,7 +11,7 @@ export default function Page() {
             />
 
             {/* @ Header links */}
-            <nav className="absolute w-screen z-20">
+            <nav className="absolute top-0 right-0 w-screen z-50">
                 <ul className="flex justify-end items-start p-4"> 
                     <li>
                         <ul className="flex gap-5">
@@ -72,6 +72,27 @@ export default function Page() {
             </article>
 
             <Devblogs />
+    
+            {/* @ Rights reserved */}
+            <section className="bg-zinc-900 p-7 text-sm flex justify-center w-full mt-20">
+                <article className="w-full xl:w-1/2 flex flex-col gap-4 lg:gap-0 lg:flex-row items-center justify-between">
+                    <p>
+                        { process.env.APP_NAME } &copy; { new Date().getFullYear() }, Todos los derechos reservados.
+                    </p>
+
+                    <p className="flex items-center gap-2">
+                        <span>Desarrollado por</span>
+                        
+                        <a 
+                            className="text-red-500 hover:underline"
+                            href="https://xaviermorell.es" 
+                            target="_blank"
+                        >
+                            Xavier Morell ❤️
+                        </a>
+                    </p>
+                </article>
+            </section>
         </section>
     </main>
 }
