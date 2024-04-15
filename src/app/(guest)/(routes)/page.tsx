@@ -30,23 +30,23 @@ export default function Page() {
             </nav>
 
             {/* @ Middle characters */}
-            <section className="absolute bottom-0 left-1/2 -translate-x-1/2 h-screen z-20 w-[950px]">
+            <section className="absolute bottom-0 left-1/2 -translate-x-1/2 h-screen z-20 w-full md:w-[500px] lg:w-[950px]">
                 <div className="relative h-screen flex justify-center items-end">
                     <img 
                         src="/images/characters/neon_girl_character.png"
-                        className="h-5/6 mt-20 fixed left-0 -mb-20 scale-x-[-1] hidden md:block"
+                        className="h-5/6 mt-20 fixed left-0 -mb-20 scale-x-[-1] hidden lg:block"
                         draggable="false"
                     />
                     
                     <img 
                         src="/images/characters/main_character.png"
-                        className="h-3/4 md:h-full z-40"
+                        className="h-3/4 lg:h-full z-40"
                         draggable="false"
                     />
 
                     <img 
                         src="/images/characters/blue_right_character.png"
-                        className="h-5/6 mt-20 -right-10 fixed -mb-20 hidden md:block"
+                        className="h-5/6 mt-20 -right-10 fixed -mb-20 hidden lg:block"
                         draggable="false"
                     />
                 </div>
