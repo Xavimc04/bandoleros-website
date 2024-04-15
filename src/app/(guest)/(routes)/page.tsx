@@ -1,5 +1,5 @@
 import Devblogs from "@/components/layouts/landing/devblogs";
-import { APP_DISCORD } from "@/lib/constants";
+import { APP_DISCORD, APP_NAME } from "@/lib/constants";
 
 export default function Page() {
     return <main className="w-screen bg-black text-white">
@@ -77,7 +77,7 @@ export default function Page() {
             <section className="bg-zinc-900 p-7 text-sm flex justify-center w-full mt-20">
                 <article className="w-full xl:w-1/2 flex flex-col gap-4 lg:gap-0 lg:flex-row items-center justify-between">
                     <p>
-                        { process.env.APP_NAME } &copy; { new Date().getFullYear() }, Todos los derechos reservados.
+                        { APP_NAME } &copy; { new Date().getFullYear() }, Todos los derechos reservados.
                     </p>
 
                     <p className="flex items-center gap-2">
