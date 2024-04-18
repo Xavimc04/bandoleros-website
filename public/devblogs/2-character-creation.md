@@ -4,4 +4,4 @@ Tras todo el proceso de instalación y setup inicia comenzamos con la personaliz
 
 **Fecha:** _17/04/24_
 
-![Imgur](https://ibb.co/cLHdJcn)
+![Imgur]([[https://ibb.co/cLHdJcn](https://res.cloudinary.com/dtydus3ig/image/upload/v1713462725/SGwqlsx_-_Imgur_ndipec.png)](https://res.cloudinary.com/dtydus3ig/image/upload/v1713462725/SGwqlsx_-_Imgur_ndipec.png))
